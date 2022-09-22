@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/68c6324e4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:wght@500&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="menu">
+            <menu>
+                <ul>
+                    <li>
+                        <i class="fas fa-home" id="i1"></i>
+                        <h4>Acas&#259;</h4>
+                    </li>
+                    <li>
+                        <i class="far fa-plus-square" id="i3"></i>
+                        <h4>Postare nou&#259;</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-cart" id="i4"></i>
+                        <h4>Magazin</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-comment-dollar" id="i5"></i>
+                        <h4>Mesaje</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-trophy"></i>
+                        <h4>Clasament</h4>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Set&#259;ri</h4>
+                    </li>
+
+                </ul>
+            </menu>
+        </div>
+        <div class="container">
+            <div class="payment-form-card">
+                <h1>Seteaz&#259; plata</h1>
+                <div class="create-inputs">
+                    <input name="credit-number" class="cc-number" type="number" onKeyPress="if(this.value.length==16) return false;" pattern="\d*" placeholder="Numărul cardului">
+                    <div class="flex">
+                        <input name="credit-expires" class="cc-expires" pattern="\d*" type="number" onKeyPress="if(this.value.length==4) return false;" placeholder="MM / YY">
+                        <input name="credit-cvc" class="cc-cvc" pattern="\d*" type="number" onKeyPress="if(this.value.length==3) return false;" placeholder="CVC" max="999">
+                    </div>
+                    <a href="/setupacc.html"><input type="submit" value="Accept&#259; plata și creează contul" class="submitPayment"></a>
+                    <p>doar <sup><del>80</del></sup>50RON/luna + 1 luna GRATIS!</p>
+                </div>
+
+            </div>
+            <div class="gym-text">
+                <h1>Grow</h1>
+                <h2>Your</h2>
+                <h1 class="music-gym">Music</h1>
+            </div>
+            <div class="gym-text-back">
+                <h1>Grow</h1>
+                <h2>Your</h2>
+                <h1 class="music-gym-back">Music</h1>
+            </div>
+            <img src="/img/artist.png" alt="" class="artist">
+        </div>
+    </div>
+    <script src="/payment.js"></script>
+</body>
+
+</html>

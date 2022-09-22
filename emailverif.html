@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/68c6324e4e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="emailverif.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bitter:wght@500&family=Poppins&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="cont">
+        <div class="menu">
+            <menu>
+                <ul>
+                    <li>
+                        <i class="fas fa-home" id="i1"></i>
+                        <h4>Acas&#259;</h4>
+                    </li>
+                    <li>
+                        <i class="far fa-plus-square" id="i3"></i>
+                        <h4>Postare nou&#259;</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-shopping-cart" id="i4"></i>
+                        <h4>Magazin</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-comment-dollar" id="i5"></i>
+                        <h4>Mesaje</h4>
+                    </li>
+                    <li>
+                        <i class="fas fa-trophy"></i>
+                        <h4>Clasament</h4>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Set&#259;ri</h4>
+                    </li>
+
+                </ul>
+            </menu>
+        </div>
+        <div class="container">
+            <div class="verification-form-card">
+                <h1>Verific&#259; email-ul</h1>
+
+                <div class="create-inputs">
+                    <p>Introduceți codul de 6 cifre primit pe email!</p>
+                    <p style="color: red;margin-top: 10px;display: none;">Codul nu este valid!</p>
+                    <div class="verification">
+
+                        <input type="number" onKeyPress="if(this.value.length==6) return false;" id="emailV" maxlength="6" max="999999" placeholder="Cod de verificare">
+                        <a href="/payment.html"><input class="verif" type="submit" value="Verifică codul"></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="gym-text">
+                <h1>Grow</h1>
+                <h2>Your</h2>
+                <h1 class="music-gym">Music</h1>
+            </div>
+            <div class="gym-text-back">
+                <h1>Grow</h1>
+                <h2>Your</h2>
+                <h1 class="music-gym-back">Music</h1>
+            </div>
+            <img src="/img/artist.png" alt="" class="artist">
+        </div>
+    </div>
+    <script src="/emailverif.js"></script>
+</body>
+
+</html>

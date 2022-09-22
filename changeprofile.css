@@ -1,0 +1,570 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*background-image: linear-gradient(70deg, #fdb33bd0 0%, #ffbc509b 100%);*/
+    background-color: #6c5ce76e;
+    display: flex;
+    user-select: none;
+}
+
+.menu {
+    width: 15%;
+    height: 100vh;
+    position: relative;
+}
+
+.menu menu {
+    position: fixed;
+    top: 50%;
+    padding: 30px;
+    transform: translateY(-50%);
+    width: 15%;
+}
+
+.menu menu ul {
+    list-style: none;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    outline: none;
+}
+
+.menu menu ul li {
+    display: flex;
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    opacity: 1;
+    background-color: #6c5ce76e;
+}
+
+.menu ul li i {
+    margin-right: 15px;
+    width: 10px;
+    color: rgb(78, 78, 78);
+    color: white;
+    line-height: 25px;
+}
+
+.menu ul li h4 {
+    color: rgb(78, 78, 78);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 25px;
+}
+
+.cont {
+    width: 100%;
+    display: flex;
+}
+
+.container {
+    width: 84%;
+    position: relative;
+    background-color: white;
+    height: 96vh;
+    margin-top: 2vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top, #6c5ce7c5 0%, #ffd1ff 50%, #6c5ce76e 100%);
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #6c5ce7c5;
+}
+
+.l-side {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 20px 40px;
+    width: 930px;
+    border-radius: 20px;
+    color: #6c5ce7;
+    height: fit-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.username {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+}
+
+.first-row {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.first-row img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-row .name-and-type {
+    margin-top: 20px;
+}
+
+.first-row .name-and-type h1 {
+    font-size: 60px;
+    margin-top: 35px;
+}
+
+.second-row {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.second-row h3 {
+    font-size: 30px;
+}
+
+.second-row h1 {
+    font-size: 55px;
+}
+
+.bio {
+    margin-top: 40px;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.r-side {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.r-side div h1 {
+    font-size: 20px;
+}
+
+.r-side div {
+    border: 4px solid #ffd1ff;
+    width: 500px;
+    color: #6c5ce7;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.r-side div input {
+    color: #6c5ce7;
+    font-size: 23px;
+    outline: none;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.r-side div textarea {
+    color: #6c5ce7;
+    font-size: 23px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    width: 450px;
+    resize: none;
+    height: 200px;
+    border: none;
+}
+
+.r-side div input::placeholder,
+.r-side div textarea::placeholder {
+    color: #6c5ce763;
+}
+
+.r-side input[type="submit"] {
+    background-color: white;
+    color: #6c5ce7;
+    cursor: pointer;
+    font-weight: 700;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.feat {
+    display: flex;
+}
+
+.feat #suma {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1850px) {
+    .l-side {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .menu ul li h4 {
+        font-size: 14px;
+    }
+    .l-side {
+        width: 650px;
+    }
+    .first-row img {
+        width: 200px;
+        height: 200px;
+    }
+    .first-row .name-and-type {
+        margin-top: 0px;
+    }
+    .first-row .name-and-type h1 {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .container {
+        display: block;
+    }
+    .r-side {
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .l-side {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .r-side div {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: 650px;
+    }
+    .menu ul li h4 {
+        display: none;
+    }
+    .menu ul li i {
+        font-size: 20px;
+        margin-right: 0px;
+        margin-left: 0px;
+        transform: translateX(-50%);
+    }
+    #i3 {
+        font-size: 26px;
+    }
+    .r-side div textarea {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .r-side div {
+        width: 520px;
+    }
+    .r-side div textarea {
+        width: 480px;
+    }
+    .r-side {
+        margin-bottom: 100px;
+    }
+    .bio p {
+        font-size: 15px;
+    }
+    .l-side {
+        width: 520px;
+        padding: 20px;
+    }
+    .first-row img {
+        width: 150px;
+        height: 150px;
+    }
+    .username {
+        font-size: 22px;
+    }
+    .first-row .name-and-type h1 {
+        font-size: 45px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .cont {
+        display: block;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .menu {
+        width: 100%;
+        height: 70px;
+        position: relative;
+    }
+    .menu menu {
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 20px;
+    }
+    .menu menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu menu ul li {
+        display: flex;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px 20px;
+        margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    #i3 {
+        font-size: 26px;
+    }
+    menu a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    body {
+        overflow-y: hidden;
+    }
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .r-side div {
+        width: 400px;
+    }
+    .l-side {
+        width: 400px;
+        padding: 10px;
+    }
+    .bio p {
+        font-size: 12px;
+    }
+    .first-row img {
+        width: 120px;
+        height: 120px;
+    }
+    .first-row .name-and-type h1 {
+        font-size: 35px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .first-row {
+        margin-top: 20px;
+    }
+    .username {
+        font-size: 19px;
+    }
+    .bio {
+        margin-top: 20px;
+    }
+    label h2 {
+        font-size: 17px;
+    }
+    .r-side div input {
+        font-size: 17px;
+        width: 360px;
+    }
+    .r-side div textarea {
+        width: 360px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .r-side div {
+        width: 270px;
+    }
+    .l-side {
+        width: 270px;
+        padding: 10px;
+    }
+    .bio p {
+        font-size: 10px;
+    }
+    .first-row img {
+        width: 100px;
+        height: 100px;
+    }
+    .first-row .name-and-type h1 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    .first-row {
+        margin-top: 20px;
+    }
+    .username {
+        font-size: 16px;
+    }
+    .bio {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    label h2 {
+        font-size: 14px;
+    }
+    .r-side div input {
+        font-size: 17px;
+        width: 230px;
+    }
+    .r-side div textarea {
+        width: 230px;
+        font-size: 17px;
+    }
+    .menu ul li i {
+        font-size: 13px;
+        transform: translateX(-50%);
+    }
+    .menu {
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+    .menu menu {
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        padding: 10px 20px;
+    }
+    .menu menu ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .menu menu ul li {
+        padding: 10px 10px 10px 15px;
+        margin-top: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    menu a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #i3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .r-side div {
+        width: 240px;
+        background-color: white;
+    }
+    .l-side {
+        width: 240px;
+        padding: 10px;
+    }
+    .bio p {
+        font-size: 8px;
+    }
+    .first-row img {
+        width: 70px;
+        height: 70px;
+    }
+    .first-row .name-and-type h1 {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    h3 {
+        font-size: 10px;
+    }
+    .first-row {
+        margin-top: 20px;
+    }
+    .username {
+        font-size: 14px;
+    }
+    .bio {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    label h2 {
+        font-size: 12px;
+    }
+    .r-side div input {
+        font-size: 13px;
+        width: 200px;
+    }
+    .r-side div textarea {
+        width: 200px;
+        font-size: 13px;
+    }
+    .menu ul li i {
+        font-size: 11px;
+    }
+    .menu {
+        height: 40px;
+    }
+    .menu menu ul li {
+        padding: 2px 2px 2px 10px;
+    }
+    menu a {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    #i3 {
+        font-size: 16px;
+    }
+    .container {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        overflow: unset;
+        overflow-x: hidden;
+        margin-left: 0px;
+    }
+}
